@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+@font-face {
+    font-family: Roboto;
+}
+
+* {
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 5px;
+}
+
+tr {
+    height: 30px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+tr th {
+    font-weight: bold;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+tr th:first-child,
+tr td:first-child {
+    width: 7%;
+    text-align: center;
+}
+
+tr th:last-child,
+tr td:last-child {
+    background-color: #f9f9f7;
+}
+
+tr th:nth-child(2),
+tr td:nth-child(2) {
+    width: 45.7%;
+    min-width: 150px;
+    border-right: 1px solid #d8d8d8;
+}
+
+tr th:nth-child(2) {
+    text-align: left;
+}
+
+tr th:nth-child(n+3),
+tr td:nth-child(n+3) {
+    width: 7%;
+}
+
+tr th:nth-child(n+3):nth-child(-n+7),
+tr td:nth-child(n+3):nth-child(-n+7) {
+    text-align: center;
+}
+
+tr th:nth-child(n+8),
+tr td:nth-child(n+8) {
+    text-align: right;
+}
+
+@media (max-width: 600px), only screen and (max-device-width: 500px) {
+    tr th:nth-last-child(2),
+    tr th:nth-last-child(3),
+    tr td:nth-last-child(2),
+    tr td:nth-last-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 450px), only screen and (max-device-width: 450px) {
+    tr th:nth-child(n+4):nth-child(-n+6),
+    tr td:nth-child(n+4):nth-child(-n+6) {
+        display: none;
+    }
+}
+
+.green {
+    background-color: #7fd498;
+}
+
+.light-green {
+    background-color: #cceed6;
+}
+
+.red {
+    background-color: #ff99b1;
+}

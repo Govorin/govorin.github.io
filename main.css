@@ -4,6 +4,22 @@
     font-family: Roboto;
 }
 
+@media (max-width: 600px), only screen and (max-device-width: 500px) {
+    tr th:nth-last-child(2),
+    tr th:nth-last-child(3),
+    tr td:nth-last-child(2),
+    tr td:nth-last-child(3) {
+        display: none;
+    }
+}
+
+@media (max-width: 450px), only screen and (max-device-width: 450px) {
+    tr th:nth-child(n+4):nth-child(-n+6),
+    tr td:nth-child(n+4):nth-child(-n+6) {
+        display: none;
+    }
+}
+
 * {
     font-family: Roboto, sans-serif;
     font-size: 13px;
@@ -71,20 +87,8 @@ tr td:nth-child(n+8) {
     text-align: right;
 }
 
-@media (max-width: 600px), only screen and (max-device-width: 500px) {
-    tr th:nth-last-child(2),
-    tr th:nth-last-child(3),
-    tr td:nth-last-child(2),
-    tr td:nth-last-child(3) {
-        display: none;
-    }
-}
-
-@media (max-width: 450px), only screen and (max-device-width: 450px) {
-    tr th:nth-child(n+4):nth-child(-n+6),
-    tr td:nth-child(n+4):nth-child(-n+6) {
-        display: none;
-    }
+a {
+    text-decoration: none;
 }
 
 .green {

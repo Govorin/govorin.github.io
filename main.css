@@ -73,10 +73,14 @@ tr th:nth-child(2) {
     text-align: left;
 }
 
+tr th:nth-child(n+3) {
+    color: #006496;
+}
+
 tr th:nth-child(n+3),
 tr td:nth-child(n+3) {
     width: 7%;
-    color: #006496;
+
 }
 
 tr th:nth-child(n+3):nth-child(-n+7),

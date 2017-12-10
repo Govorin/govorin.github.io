@@ -48,6 +48,7 @@ td {
 tr th {
     font-weight: bold;
     border-bottom: 1px solid #d8d8d8;
+
 }
 
 tr th:first-child,
@@ -75,6 +76,7 @@ tr th:nth-child(2) {
 tr th:nth-child(n+3),
 tr td:nth-child(n+3) {
     width: 7%;
+    color: #006496;
 }
 
 tr th:nth-child(n+3):nth-child(-n+7),
